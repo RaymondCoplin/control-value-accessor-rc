@@ -1,0 +1,9 @@
+<form [formGroup]="form">
+  <input type="text" placeholder="Primer nombre" formControlName="firstName" /> <br />
+  <input type="text" placeholder="Primer apellido" formControlName="lastName" /> <br />
+  <custom-input placeholder="Profession" formControlName="profession"></custom-input>
+</form>
+
+<hr />
+
+{{ form.value | json }}
